@@ -8,7 +8,7 @@ import { errorHandler } from './middleware/errorHandler.js';
 
 const app = express();
 
-const allowed = process.env.FRONTEND_URL || 'http://localhost:3000';
+const allowed = process.env.FRONTEND_URL || 'https://regwithdclm.vercel.app';
 app.use(
   cors({
     origin: allowed,
